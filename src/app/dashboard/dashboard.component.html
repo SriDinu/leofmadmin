@@ -1,0 +1,67 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid d-flex">
+        <h4>DashBoard</h4>
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Programme</button>
+    </div>
+</nav>
+<div class="container mt-3">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Programme Name</th>
+                <th scope="col">Programme By</th>
+                <th scope="col">Programme Start At</th>
+                <th scope="col">Programme End At</th>
+                <th scope="col">Programme Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td><button class="btn btn-info">edit</button>
+                <button class="btn btn-danger mx-3">delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Programme</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="proName" class="form-label"> Programme name</label>
+                  <input type="text" class="form-control" id="proName" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="proBy" class="form-label">Programme By</label>
+                  <input type="text" class="form-control" id="proBy">
+                </div>
+                <div class="mb-3">
+                    <label for="proBy" class="form-label">Programme Start At</label>
+                    <input type="time" class="form-control" id="proBy">
+                  </div>
+                  <div class="mb-3">
+                    <label for="proBy" class="form-label">Programme End AT</label>
+                    <input type="time" class="form-control" id="proBy">
+                  </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add Programme</button>
+        </div>
+      </div>
+    </div>
+  </div>
